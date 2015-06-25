@@ -4,7 +4,7 @@ Easy to deploy Android version proxy for Google App Engine.
 
 Motivation
 --
-Google doesn't provide a simple way nor API to check your Android version within the application. Although a slew of Android libraries exist to faciliate this, there isn't a simple server side proxy implentation to use in conjunciton with aforementioned libraries.
+Google doesn't provide a simple way nor API to check your Android version within the application. Although a slew of Android libraries exist to facilitate this, there isn't a simple server side proxy implementation to use in conjunction with aforementioned libraries.
 
 Installation
 --
