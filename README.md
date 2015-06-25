@@ -13,12 +13,18 @@ Modify <b>app.yaml</b> and change <b>application</b> name to your own matching t
 API Reference
 --
 Your version proxy server should return something similar as the following:
-```json
+```javascript
 {
     content: "What's New:</p><br><li>First Play store release.</li>",
     version_code: 8
 }
 ```
+Server side example:<br>
+http://androidversionproxy.appspot.com
+
+In app example:<br>
+![](https://github.com/remlov/GAE-Play-Store-version-proxy/raw/master/android_sample/screenshot.png)
+
 In the included Android sample I used the Android library [WVersionManager](https://github.com/winsontan520/Android-WVersionManager). In you MainActivity of your Android app do something like the following:
 ```java
 @Override
