@@ -37,10 +37,10 @@ protected void onCreate(Bundle savedInstanceState) {
     versionManager.checkVersion();
 }
 ```
-Where <b>myGaeProxyUrl</b> will point to your deployed proxy server.
+Where <b>http://myGaeProxyUrl.appspot.com</b> will point to your deployed proxy server.
 Caveat
 --
-As [WVersionManager](https://github.com/winsontan520/Android-WVersionManager) and other Android libraries generally use the <b>versionCode</b> and not the <b>versionName</b> and the only available metadata to scrape of the Play Store is the <b>versionName</b> I use the semantic versioning paradigm and use the PATCH value and match it to the <b>versionCode</b> eg:
+As [WVersionManager](https://github.com/winsontan520/Android-WVersionManager) and other Android version helper libraries generally use the <b>versionCode</b> and not the <b>versionName</b> and the only available metadata to scrape off the Play Store is the <b>versionName</b> I use the semantic versioning paradigm and use the PATCH value and match it to the <b>versionCode</b> eg:
 ```xml
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.remlov.androidversionproxyexample"
@@ -51,7 +51,7 @@ Questions
 --
 <b>Question</b>: Why use a proxy at all instead of having the Android app do the Play Store url scraping?
 
-<b>Answer</b>: If you have a slew of users using your application and Google decides to change the layout of the Play Store and/or change the tag used to search and find the <b>versionName</b>, your users will be out of luck to get an in app update notification. If you use a proxy, you can just update your proxy server to mitigate such an issue.
+<b>Answer</b>: If you have a slew of users using your application and Google decides to change the layout of the Play Store and/or change the tag used to search and find the <b>versionName</b>, your users will be out of luck to get an in app update notification. If you use a proxy, you can just update your proxy server for those unforeseen changes to mitigate such an issue.
 License
 --
 
