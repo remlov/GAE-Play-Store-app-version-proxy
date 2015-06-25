@@ -1,0 +1,4 @@
+cron:
+- description: scrape google play store url for version info
+  url: /cache
+  schedule: every 60 mins
