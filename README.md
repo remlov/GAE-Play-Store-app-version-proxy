@@ -40,7 +40,7 @@ protected void onCreate(Bundle savedInstanceState) {
 Where <b>http://myGaeProxyUrl.appspot.com</b> will point to your deployed proxy server.
 Caveat
 --
-As [WVersionManager](https://github.com/winsontan520/Android-WVersionManager) and other Android version helper libraries generally use the <b>versionCode</b> and not the <b>versionName</b> and the only available metadata to scrape off the Play Store is the <b>versionName</b> I use the semantic versioning paradigm and use the PATCH value and match it to the <b>versionCode</b> eg:
+As [WVersionManager](https://github.com/winsontan520/Android-WVersionManager) and other Android version helper libraries generally use the <b>versionCode</b> and not the <b>versionName</b> and the only available metadata to scrape off the Play Store is the <b>versionName</b> I use the [semantic versioning](http://semver.org) paradigm and use the PATCH value and match it to the <b>versionCode</b> eg:
 ```xml
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.remlov.androidversionproxyexample"
