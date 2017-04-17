@@ -52,6 +52,7 @@ Questions
 <b>Question</b>: Why use a proxy at all instead of having the Android app do the Play Store url scraping?
 
 <b>Answer</b>: If you have a slew of users using your application and Google decides to change the layout of the Play Store and/or change the tag used to search and find the <b>versionName</b>, your users will be out of luck to get an in app update notification. If you use a proxy, you can just update your proxy server for those unforeseen changes to mitigate such an issue.
+
 License
 --
 
